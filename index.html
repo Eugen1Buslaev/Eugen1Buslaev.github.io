@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Barman</title>
+	<style>
+		
+*{
+	margin: 0;
+	padding: 0;
+}
+ .wrapper{
+ 	width: 100%;
+ 	height:100%;
+ 	background: url('2.mp4');
+    background-size: cover
+ }
+.pic{
+	display: flex;
+	justify-content:center;
+    align-items:center;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+}
+audio {
+	display: none;
+}
+.bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -9999;
+}
+.brat{
+right: 0px;
+z-index: 1;
+
+width: 100%;
+height:50px;
+background-color: black;
+color: white;
+text-align: center;
+position: fixed;
+padding-top: 25px;
+font-size: 30px;
+font-family: tahoma;
+font-style: bold;
+
+
+}
+	</style>
+
+
+</head>
+<body>
+<div class="brat">Не покидай нас, Барик!!! Там тебе отрежут писю, и скормят тиграм!</div>
+<div class="wrapper">
+	<div class="pic">
+		<img src="1.jpg" alt="">
+		 <audio controls autoplay>
+    <source src="3.ogg" type="audio/ogg; codecs=vorbis"  controls="controls">
+    <source src="3.mp3" type="audio/mpeg">
+	</div>
+<video autoplay loop muted class="bgvideo" id="bgvideo">
+   <source src="2.mp4" type="video/mp4"></source>
+ 
+
+
+
+</div>
+	
+</body>
+</html>
